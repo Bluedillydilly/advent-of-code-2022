@@ -1,0 +1,11 @@
+counter=12
+while [ $counter -lt 26 ]
+do
+	echo $counter
+	mkdir day$counter
+	touch day$counter/day$counter-{1,2}.rb
+	touch day$counter/day$counter-{test,input}.txt
+	((counter++))
+done
+
+echo DONE
