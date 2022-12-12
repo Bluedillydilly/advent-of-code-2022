@@ -1,4 +1,3 @@
-monkey_business = 0
 $monkeys = []
 check_points = [1, 20, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
 $lcm = 1
@@ -21,7 +20,6 @@ class Monkey
         while @items.length != 0
             i = @items.shift
             worry = operation.(i) % $lcm # get worry after inspection
-
             $monkeys[test_op.(worry)].items.push(worry)
         end
     end
